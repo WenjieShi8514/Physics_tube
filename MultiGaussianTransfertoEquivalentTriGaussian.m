@@ -1,6 +1,6 @@
 function [EquivalentTriGaussian_parameter,area_sumsum] = MultiGaussianTransfertoEquivalentTriGaussian(x,y,rho0_best,rho_inf_array,E_array,w_array,break_point)
 
-%%% Convert multi-Gaussian fitting results to equivalent three-Gaussian distribution
+%%% Convert multi-Gaussian fitting results to equivalent Tri-Gaussian distribution
 %%% Steps:
 %%% 1. Calculate the areas of the fitted multi-Gaussian distribution in the basal domain 
 %%%    anterior/posterior-lateral domain regions.

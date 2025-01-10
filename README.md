@@ -30,10 +30,16 @@ It is a sub-function of NotochordCellCortexThicknessFitting.m, aiming at cell gr
     Perform multi-Gaussian fittings for the basal domain using the number of Gaussians determined by the spline regression.  
     Fix the mean values of each Gaussian in the basal domain's multi-Gaussian fit results and perform a global multi-Gaussian fit for the basal-lateral domain
 
-### Header 3:
-    MultiGaussianTransfertoEquivalentTriGaussian.m, aiming at Convert multi-Gaussian fitting results to equivalent Tri-Gaussian distribution
-It is a sub-function of NotochordCellCortexThicknessFitting.m, aiming at cell grayscale data fitting with Multi-Gaussian functions:
+### Header 4:
+    MultiGaussianTransfertoEquivalentTriGaussian.m,
+It is a sub-function of NotochordCellCortexThicknessFitting.m, aiming at converting multi-Gaussian fitting results output by MultiGaussian_fit.m to equivalent Tri-Gaussian distribution:
+    Calculate the areas of the fitted multi-Gaussian distribution in the basal domain anterior/posterior-lateral domain regions
+    Fix the area of the basal domain region and fit the equivalent mono-Gaussian distribution for the basal domain region to obtain its characteristic parameters
+    Recalculate the areas of the anterior/posterior-lateral domain regions and fine-tune the parameters of the three-Gaussian distribution to ensure area conservation across the basal domain and the anterior/posterior-lateral domain regions
 
+### Header 5:
+    RelativeLateralEdgeSignalCalculation.m,
+Calculate the acto-myosin fluorescence signal at later-lumen boundary from Tri-Gaussian distribution using NotochordCellCortexThicknessFitting.m:
 
 
 

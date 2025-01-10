@@ -202,7 +202,7 @@ end
 
 
 
-%% 求解ZO1 WT overexpression group与control group的lumen在每张照片中的体积均值和标准差
+%% Calculate the mean and standard deviation of the lumen volume for each individual in the ZO1 WT overexpression group and the control group
 individual_TD=zeros(20,3,2);  % ZO1 WT组的ZO1 WT overexpression和control group的lumen opening length均值
 individual_LR=zeros(20,3,2);  % ZO1 WT组的ZO1 WT overexpression和control group的LR均值
 individual_volume=zeros(20,3,2);  % ZO1 WT组的ZO1 WT overexpression和control group的lumen volume均值
@@ -236,7 +236,7 @@ k_final_array(i_ZO1_type)=k_final;
 end
 
 
-%% 计算对照组和实验组的体积、长度的均值和标准差
+%% Calculate the mean and standard deviation of volume and length for the control group and the experimental group
 average_TD=zeros(1,3);  % 长度均值
 average_LR=zeros(1,3);  % LR均值
 average_volume=zeros(1,3);  % 体积均值
@@ -255,7 +255,7 @@ for i=1:3
 end
 
 
-%% 进行统计检验
+%% Perform statistical tests
 % 首先通过D’Agostino–Pearson normality test判断实验样本是否服从正态分布。若服从，则使用t-test进行检验，若不服从，则使用Mann–Whitney U test进行检验
 TD_test=zeros(1,3);  % 第一维表示WT比GuK，第二维表示WT比ABR，第三维表示GuK比ABR
 LR_test=zeros(1,3);

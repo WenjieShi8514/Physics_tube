@@ -37,7 +37,7 @@ It is a sub-function of NotochordCellCortexThicknessFitting.m, aiming at cell gr
     Fix the mean values of each Gaussian in the basal domain's multi-Gaussian fit results and perform a global multi-Gaussian fit for the basal-lateral domain
 
 ### Header 5:
-    MultiGaussianTransfertoEquivalentTriGaussian.m,
+    MultiGaussianTransfertoEquivalentTriGaussian.m
 It is a sub-function of NotochordCellCortexThicknessFitting.m, aiming at converting multi-Gaussian fitting results output by MultiGaussian_fit.m to equivalent Tri-Gaussian distribution:
 
     Calculate the areas of the fitted multi-Gaussian distribution in the basal domain anterior/posterior-lateral domain regions
@@ -45,7 +45,7 @@ It is a sub-function of NotochordCellCortexThicknessFitting.m, aiming at convert
     Recalculate the areas of the anterior/posterior-lateral domain regions and fine-tune the parameters of the three-Gaussian distribution to ensure area conservation across the basal domain and the anterior/posterior-lateral domain regions
 
 ### Header 6:
-    RelativeLateralEdgeSignalCalculation.m,
+    RelativeLateralEdgeSignalCalculation.m
 Calculate the acto-myosin fluorescence signal at later-lumen boundary from Tri-Gaussian distribution using NotochordCellCortexThicknessFitting.m:
 
     Read the mix_all data file (xlsx) that stores the fitted Tri-Gaussian distribution characteristic parameters and the protein file (e.g., lifeact) (xlsx) that stores file names corresponding to the characteristic parameters
@@ -55,33 +55,33 @@ Calculate the acto-myosin fluorescence signal at later-lumen boundary from Tri-G
     Calculate the contractile force exerted on each lumen by the contractile rings of notochord cells on both sides
 
 ### Header 7:
-    RelativeLumenGeometryunderZO1Overexpression.m,
+    RelativeLumenGeometryunderZO1Overexpression.m
 Calculate the relative lumen TD, LD and volume after ZO1 dominant negative form overexpression
 
-    Assign the values of Transverse Diameter (radial) and Longitudinal Radius (axial)
+    Assign the values of Transverse Diameter (radial) and Longitudinal Radius (axial) from experiments
     Calculate the mean and standard deviation of the lumen volume for each individual in the ZO1 WT overexpression group and the control group
     Calculate the mean and standard deviation of volume and length for the control group and the experimental group
     Perform statistical tests
 
 ### Header 8:
-    LinearSstabilityAnalysisofSphericalCapCase.m,
+    LinearSstabilityAnalysisofSphericalCapCase.m
 Numerically calculate of the steady-state lumen and its stability as a function of model parameters
 
     Estimate an initial value of the model parameters
     Calculate the steady-state solution
-    Compute the eigenvalues of the linear stability matrix to determine the stability of each given parameter value
+    Compute the eigenvalues of the linear stability matrix to determine the stability of each given parameter value on an one-dimensional parameter plane
 
 ### Header 9:
-    PhaseDiagramofSphericalCapCase.m,
-Numerically calculate of the state diagram of the steady-state lumen as a function of the given two-dimensional model parameters space
+    PhaseDiagramofSphericalCapCase.m
+Numerically calculate of the state diagram of the steady-state lumen as a function of the given two-dimensional model parameters plane
 
     Estimate an initial value of the model parameters
     Give a precise range of two chosen parameters
     Calculate the steady-state solution
-    Compute the eigenvalues of the linear stability matrix to determine the stability of each given parameter value
+    Compute the eigenvalues of the linear stability matrix to determine the stability of each given parameter value on a two-dimensional parameter plane
 
 ### Header 10:
-    FullSolutionofSphericalCapLumenDynamics.m,
+    FullSolutionofSphericalCapLumenDynamics.m
 Numerically solve the differential-algebraic equations and predict lumen dynamics
 
     Give a series of values for the dimensionless parameters. Those parameters may be fixed in time or may be time-dependent
